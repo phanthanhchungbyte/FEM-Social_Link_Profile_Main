@@ -20,7 +20,8 @@ body {
   background: hsl(0, 0%, 8%);
   
   .card {
-    width: 384px;
+    width: 386px;
+    height: 614px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -29,6 +30,7 @@ body {
     background-color: hsl(0, 0%, 12%);
     border-radius: 0.5rem;
     padding: 2rem;
+    padding-bottom: 2.5rem;
 
     h3, p, a{
       font-family: Inter-Regular, sans-serif;
@@ -37,45 +39,44 @@ body {
 
   .card img {
     border-radius: 50%;
-    width: 5rem;
+    width: 6rem;
   }
 
   .card p.card-name {
-    font-size: 1.25rem;
+    font-size: 1.65rem;
     color: white;
-    font-family: Inter-Bold, sans-serif;
+    font-family: Inter-Regular, sans-serif;
     margin-bottom: 0;
   }
 
   .card p.location {
     color: hsl(75, 94%, 57%);
     font-family: Inter-Bold, sans-serif;
-    font-size: 0.75rem;
-    margin-top: 0.35rem;
+    font-size: 0.95rem;
+    margin-top: 0.45rem;
   }
 
   .card p.description {
     color: white;
-    font-size: 0.75rem;
-    margin-top: 1.125rem;
+    font-size: 0.95rem;
+    margin-top: 2rem;
   }
 
   .card nav{
     width: 100%;
-    padding: 0;
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
   }
 
   .card nav a {
-    padding: 0.6125rem 0.75rem;
-    margin-bottom: 0.625rem;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.9rem;
     color: white;
-    font-size: 0.75rem;
-    font-weight: 600;
+
+    font-weight: 500;
     background-color: hsl(0, 0%, 20%);
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
 
     &:hover {
       background-color: hsl(75, 94%, 57%);
