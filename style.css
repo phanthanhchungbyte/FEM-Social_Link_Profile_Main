@@ -1,0 +1,97 @@
+﻿* {
+  box-sizing: border-box;
+  color: black;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+body {
+  background: hsl(0, 0%, 8%);
+  
+  .card {
+    width: 384px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+    h3, p, a{
+      font-family: Inter-Regular, sans-serif;
+    }
+  }
+
+  .card img {
+    border-radius: 50%;
+    width: 5rem;
+  }
+
+  .card p.card-name {
+    font-size: 1.25rem;
+    color: white;
+    font-family: Inter-Bold, sans-serif;
+    margin-bottom: 0;
+  }
+
+  .card p.location {
+    color: hsl(75, 94%, 57%);
+    font-family: Inter-Bold, sans-serif;
+    font-size: 0.75rem;
+    margin-top: 0.35rem;
+  }
+
+  .card p.description {
+    color: white;
+    font-size: 0.75rem;
+    margin-top: 1.125rem;
+  }
+
+  .card nav{
+    width: 100%;
+    padding: 0;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card nav a {
+    padding: 0.6125rem 0.75rem;
+    margin-bottom: 0.625rem;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 0.25rem;
+
+    &:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: black;
+    }
+  }
+
+  .card nav a:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 390px){
+    .card {
+      width: 327px;
+    }
+  }
+}
+
+
